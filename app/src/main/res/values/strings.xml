@@ -1,0 +1,28 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">MathQuiz</string>
+    <string name="first_question">4 in words</string>
+    <string name="second_question">Which of the following holds for 2?</string>
+    <string name="third_question">All even numbers are composite</string>
+    <string name="fourth_question">(-3+4/2+1) evaluates to?</string>
+    <string name="fifth_question">Is 16 perfect square?</string>
+    <string name="sixth_question">Value of (6 - 2) x 6 / 3 :</string>
+
+    <string name="checkbox1">Even number</string>
+    <string name="checkbox2">Negative number</string>
+    <string name="checkbox3">Prime number</string>
+
+    <string name="radioButton1">Yes</string>
+    <string name="radioButton2">No</string>
+    <string name="radioButton3">True</string>
+    <string name="radioButton4">False</string>
+    <string name="radioButton5">Cannot determine</string>
+
+    <string name="first_answer">Four</string>
+    <string name="fourth_answer">0</string>
+    <string name="sixth_answer">8</string>
+
+    <string name="submit_button">Submit</string>
+    <string name="score_message">Score : <xliff:g example="4" id="score">%d</xliff:g>/6</string>
+
+</resources>
