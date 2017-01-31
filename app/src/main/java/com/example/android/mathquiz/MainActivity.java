@@ -16,11 +16,8 @@ public class MainActivity extends AppCompatActivity {
     private CheckBox mCheckBox1;
     private CheckBox mCheckBox2;
     private CheckBox mCheckBox3;
-    private RadioButton mRadioButton1;
     private RadioButton mRadioButton2;
     private RadioButton mRadioButton3;
-    private RadioButton mRadioButton4;
-    private RadioButton mRadioButton5;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,11 +30,8 @@ public class MainActivity extends AppCompatActivity {
         mCheckBox1 = (CheckBox) findViewById(R.id.checkbox1);
         mCheckBox2 = (CheckBox) findViewById(R.id.checkbox2);
         mCheckBox3 = (CheckBox) findViewById(R.id.checkbox3);
-        mRadioButton1 = (RadioButton) findViewById(R.id.radioButton1);
         mRadioButton2 = (RadioButton) findViewById(R.id.radioButton2);
         mRadioButton3 = (RadioButton) findViewById(R.id.radioButton3);
-        mRadioButton4 = (RadioButton) findViewById(R.id.radioButton4);
-        mRadioButton5 = (RadioButton) findViewById(R.id.radioButton5);
     }
 
     /**
@@ -48,7 +42,13 @@ public class MainActivity extends AppCompatActivity {
 
     public void onSubmit(View view) {
         int score = evaluate();
-        Toast.makeText(this, getString(R.string.score_message, score), Toast.LENGTH_SHORT).show();
+        String message = null;
+        if (score == 6) {
+            message = getString(R.string.text_full_score);
+        } else {
+            message = getString(R.string.text_partial_score);
+        }
+        Toast.makeText(this, getString(R.string.score_message, score, message), Toast.LENGTH_SHORT).show();
     }
 
     /**

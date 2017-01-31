@@ -23,6 +23,9 @@
     <string name="sixth_answer">8</string>
 
     <string name="submit_button">Submit</string>
-    <string name="score_message">Score : <xliff:g example="4" id="score">%d</xliff:g>/6</string>
+    <string name="text_full_score">Cheers!!!</string>
+    <string name="text_partial_score">Try Again!</string>
+    <string name="score_message">Score : <xliff:g example="4" id="score">%d</xliff:g>/6\n
+        <xliff:g example="Congrats" id="greeting">%s</xliff:g> </string>
 
 </resources>
