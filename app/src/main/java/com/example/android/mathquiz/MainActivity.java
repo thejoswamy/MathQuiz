@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         // Second answer
-        if (mCheckBox1.isChecked() && mCheckBox3.isChecked()) {
+        if (mCheckBox1.isChecked() && !mCheckBox2.isChecked() && mCheckBox3.isChecked()) {
             score++;
         }
 
